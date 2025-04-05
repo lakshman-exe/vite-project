@@ -1,42 +1,65 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+div {
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+div .navbar h2 {
+  font-size: 1.2rem;
+  opacity: 0.6;
+  font-weight: lighter;
+  padding-left: 5px;
+  cursor: pointer;
+}
+div .navbar img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+div .navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: lighter;
+  cursor: pointer;
+}
+div .notice {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #d5d8ec;
+  padding: 8px;
+  padding-left: 12px;
+  margin-top: 7px;
+  border-radius: 5px;
+}
+div .notice p {
+  font-weight: lighter; /* lighter than normal */
+  /* Google blue or any shade you prefer */
+}
+div .hero h1 {
+  margin-top: 10px;
+  font-size: 96px;
   text-align: center;
+  margin-bottom: 0; /* Removes space below h1 */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+div .hero p {
+  text-align: center;
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: lighter; /* Removes space above p */
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+div .hero button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #1a73e8;
+  border: none;
+  color: white;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
 }
